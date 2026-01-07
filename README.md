@@ -3,7 +3,7 @@
 
 **Whilesave** is a completely free and open-source browser extension that automatically finds and applies the best coupon codes at checkout and helps you earn cashback at competitive rates.
 
- [➜Official Website](https://www.whilesave.com/) |  [➜Privacy Policy](https://www.whilesave.com/privacy) | [➜Supported Platforms](https://github.com/whilesave/Whilesave-Extension/blob/develop/SUPPORTS.md) 
+ [➜Official Website](https://www.whilesave.com/) |  [➜Privacy Policy](https://www.whilesave.com/privacy) | [➜Supported Platforms](https://github.com/Whilesave/Whilesave-Extension/blob/main/SUPPORTS.md) 
 
 ### Earn Cash Back in One Click
 

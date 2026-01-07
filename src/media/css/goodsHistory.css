@@ -1,0 +1,255 @@
+.history-panel-wrapper{
+  position: fixed;
+  z-index: 2147483646;
+  box-sizing: border-box;
+}
+
+.history-panel-wrapper svg.icon-i87i-svg path{
+  fill: var(--color-modeal-header-icon)!important;
+}
+
+.history-panel-wrapper svg.icon-i87i-svg:hover path{
+  fill: var(--color-modeal-header-icon-hover)!important;
+}
+
+/*** History big box*/
+.history-panel-wrapper >.history-panel-aside-main{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -moz-box-shadow:2px 2px 5px #b6bdc5;
+  -webkit-box-shadow:2px 2px 5px #b6bdc5;
+  box-shadow:2px 2px 5px #b6bdc5;
+  background-color: #FFF;
+}
+.history-panel-wrapper >.history-panel-aside-main >.panel-aside-main-inner{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.history-panel-aside-main .panel-aside-main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebe6e6;
+  height:var(--size-height-modeal-header);
+  background-color: var(--color-modeal-header-background);
+  padding: 0px var(--size-padding-horizontal-modeal-header);
+  box-sizing: border-box;
+}
+.history-panel-aside-main .panel-aside-main-header >.logo-header{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.history-panel-aside-main .panel-aside-main-header >.logo-header >svg{
+  width: var(--size-height-modeal-icon)!important;
+  height: var(--size-height-modeal-icon)!important;
+}
+.history-panel-aside-main .panel-aside-main-header >.title-header{
+  font-size: var(--size-font-modeal-header-title);
+  font-weight: 700;
+  flex: 1;
+  padding-left: 10px;
+}
+.history-panel-aside-main .panel-aside-main-header .btns-header{
+  display: flex;
+  flex-direction: row;
+}
+.history-panel-aside-main .panel-aside-main-header .btns-header .close,
+.history-panel-aside-main .panel-aside-main-header .btns-header .setting{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  width:var(--size-height-modeal-operat-icon);
+}
+
+.history-panel-aside-main .panel-aside-main-content{
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--color-modeal-content-background);
+}
+.history-panel-aside-main .panel-aside-main-content::-webkit-scrollbar {
+  width: 2px;
+}
+.history-panel-aside-main .panel-aside-main-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+.history-panel-aside-main .panel-aside-main-content::-webkit-scrollbar-thumb {
+  background-color: #969696;
+  border-radius: 2px;
+}
+
+.history-panel-aside-main .panel-aside-main-item{
+  padding: 5px;
+  margin:5px 0px;
+}
+.history-panel-aside-main .panel-aside-main-item .item-title{
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: #b6b6b6;
+  padding: 5px 0px;
+}
+.history-panel-aside-main .panel-aside-main-item .item-container{
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/**** History Record Display ****/
+.history-panel-aside-main .histories-box-review_item{
+  width:33.3333%;
+  margin: 5px 0px;
+  overflow: hidden;
+}
+.history-panel-aside-main .histories-box-review_item >a{
+  display: block !important;
+  position: relative !important;
+  margin: 0px auto !important;
+  background-color: #fff !important;
+  width: 110px !important;
+  border-radius: 5px !important;
+  border: 1px solid #ccc !important;
+  box-sizing: content-box !important;
+}
+.history-panel-aside-main .histories-box-review_item > a >.review-shadow{
+  position:absolute;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  z-index:99;
+  text-align: center;
+  border:2px solid red;
+  border-radius: 5px;
+  display:none;
+}
+.history-panel-aside-main .histories-box-review_item > a >.review-shadow .delete-btn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 10px;
+  background-color:red;
+  color:#FFF;
+  font-size:13px;
+  border-radius:3px;
+}
+.history-panel-aside-main .histories-box-review_item > a >.review-img{
+  width:110px;
+  height: 110px;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+}
+.history-panel-aside-main .histories-box-review_item > a >.review-img >img{
+  width:100%!important;
+}
+.history-panel-aside-main .histories-box-review_item > a >.review-text{
+  text-align: center!important;
+  font-size: 13px !important;
+  color: #000 !important;
+  text-decoration: underline !important;
+  padding: 5px!important;
+  white-space: nowrap!important;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+}
+
+/*** Horizontal small card*/
+.history-panel-wrapper >.history-panel-aside-body{
+  display: flex;
+  border-radius:5px;
+  overflow: hidden;
+  background-color: #fafafa;
+  box-shadow: 1px 1px 2px #b6bdc5;
+  height:60px;
+  direction: ltr!important;
+}
+.history-panel-wrapper >.history-panel-aside-body >div{
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+}
+.history-panel-aside-body .goods-expand{
+  cursor: pointer;
+  width: 20px !important;
+}
+
+.history-panel-aside-body .goods-expand svg{
+  transition: transform 0.3s!important;
+}
+
+/****Goods Display***/
+.history-panel-aside-body .goods-review{
+  flex-direction: row;
+  width:auto;
+  transition: all 0.5s ease-in-out;
+}
+.history-panel-aside-body .goods-review-item{
+  width:45px;
+  height:45px;
+  line-height:45px;
+  margin:0px 5px;
+  position:relative;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor:pointer;
+}
+.history-panel-aside-body .goods-review-item >a{
+  display:block!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+.history-panel-aside-body .goods-review-item > a>.review-shadow{
+  position:absolute;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  z-index:99;
+  text-align: center;
+  background-color:rgb(61 155 164 / 20%);
+  display:none;
+}
+.history-panel-aside-body .goods-review-item > a>.review-shadow img{
+  width:15px!important;
+}
+.history-panel-aside-body .goods-review-item img{
+  width:100%!important;
+}
+
+/** Expand history record BOX **/
+.history-panel-aside-body .history-box-expand{
+  flex-direction: column;
+  text-align: center;
+  margin:0px 10px;
+  cursor: pointer;
+}
+.history-panel-aside-body .history-box-expand svg{
+  width:33px!important;
+  height: 33px!important;
+}
+.history-panel-aside-body .history-box-expand label{
+  font-size:12px!important;
+  font-weight: bold!important;
+}
+
+.history-panel-aside-body .wrapper-drag-handle{
+  width: 20px !important;
+  cursor: move;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+}

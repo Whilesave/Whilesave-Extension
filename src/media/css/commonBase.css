@@ -1,0 +1,7 @@
+/**
+ * This CSS can be used in all locations, including shadow DOM.
+ * If used within shadow DOM, it needs to be imported separately.
+ */
+ *[data-extension-direction='rtl']{
+  direction: rtl!important;
+}

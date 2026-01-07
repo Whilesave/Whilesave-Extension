@@ -1,0 +1,121 @@
+{
+	"manifest_version": 3,
+	"name": "Whilesave Extension",
+	"short_name": "Whilesave",
+	"description": "__MSG_extension_desc__",
+	"default_locale": "en",
+	"version": "0.0.0",
+	"version_name": "Dev",
+	"icons": {
+	  "16": "media/img/icons/default/icon-16.png",
+	  "48": "media/img/icons/default/icon-48.png",
+	  "96": "media/img/icons/default/icon-96.png",
+	  "128": "media/img/icons/default/icon-128.png",
+	  "256": "media/img/icons/default/icon-256.png",
+	  "512": "media/img/icons/default/icon-512.png"
+	},
+	"permissions": [
+		"storage"
+	],
+	"host_permissions": [
+	  "*://*/*"
+	],
+	"background": {
+	  "service_worker": "service_worker.js",
+	  "type": "module"
+	},
+	"action": {
+	  "default_icon": {
+		"16": "media/img/icons/default/icon-16.png",
+		"48": "media/img/icons/default/icon-48.png",
+		"96": "media/img/icons/default/icon-96.png",
+		"128": "media/img/icons/default/icon-128.png",
+		"256": "media/img/icons/default/icon-256.png",
+		"512": "media/img/icons/default/icon-512.png"
+	  }
+	},
+	"web_accessible_resources": [
+	  {
+		"resources": [
+		  "html/*",
+		  "media/img/*",
+		  "media/conf/*",
+		  "media/css/*",
+		  "*favicon/*"
+		],
+		"matches": ["<all_urls>"]
+	  }
+	],
+	"content_scripts": [
+	  {
+		"js": [
+			"media/js/lib/jst.js",
+			"media/js/lib/jscs.js",
+			"media/js/opts.js",
+
+			"media/js/helper/base/data/dataStore.js",
+			"media/js/helper/base/data/supports.js",
+			"media/js/helper/base/util/dao.js",
+			"media/js/helper/base/util/i18n.js",
+			"media/js/helper/base/util/request.js",
+			"media/js/helper/base/util/style.js",
+			"media/js/helper/base/util/logger.js",
+			"media/js/helper/base/util/file.js",
+			"media/js/helper/base/util/util.js",
+			"media/js/helper/base/ui/ui.js",
+			"media/js/helper/base/util/elementUtil.js",
+			"media/js/helper/base/util/featureControl.js",
+
+			"media/js/helper/setting/setting.js",
+			
+			"media/js/helper/inspect/activate.js",
+			"media/js/helper/inspect/couponListModal.js",
+			"media/js/helper/inspect/inspectCouponsHTM.js",
+			"media/js/helper/inspect/mask.js",
+			"media/js/helper/inspect/progressModal.js",
+			"media/js/helper/inspect/detect/autoDetect.js",
+			"media/js/helper/inspect/detect/autoDetectUtil.js",
+
+			"media/js/helper/history/goodsHistory.js",
+			"media/js/helper/history/goodsRecord.js",
+
+			"media/js/helper/platform/aliexpress.js",
+			"media/js/helper/platform/aliexpressSearch.js",
+			"media/js/helper/platform/ebay.js",
+			"media/js/helper/platform/ebaySearch.js",
+			"media/js/helper/platform/bestbuy.js",
+			"media/js/helper/platform/bestbuySearch.js",
+			"media/js/helper/platform/lazada.js",
+			"media/js/helper/platform/lazadaSearch.js",
+			"media/js/helper/platform/banggood.js",
+			"media/js/helper/platform/banggoodSearch.js",
+			"media/js/helper/platform/amazon.js",
+
+			"media/js/helper/engineScreen/searchEnginScreen.js",
+			"media/js/helper/subscribe/subscribe.js",
+
+			"media/js/client-page.js"
+		],
+		"matches": [
+			"*://*/*"
+		],
+		"exclude_matches": [
+		  "https://*/*.txt",
+		  "https://*/*.png",
+		  "https://*/*.jpg",
+		  "https://*/*.jpeg",
+		  "https://*/*.gif",
+		  "https://*/*.xml",
+		  "https://*/*.svg",
+		  "https://*/*.manifest",
+		  "https://*/*.log",
+		  "https://*/*.ini"
+		],
+		"run_at": "document_end"
+	  }
+	],
+	"content_security_policy": {
+	  "extension_pages": "script-src 'self'; object-src 'self'"
+	}
+}
+  

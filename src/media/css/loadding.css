@@ -1,0 +1,61 @@
+.request-state {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.loading {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.loading::before, .loading::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid transparent;
+}
+
+.loading::before {
+  border-top-color: #000;
+  animation: spin 0.9s linear infinite;
+}
+
+.loading::after {
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  animation: spinReverse 1.2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.loading-error-image {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.loading-error-retry {
+  width: 140px !important;
+  height: 40px !important;
+  border: 4px solid #ccc !important;
+  border-radius: 50px !important;
+  margin: 20px auto !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

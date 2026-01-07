@@ -1,0 +1,117 @@
+.setting-piece:not(:last-child) {
+  margin-bottom: 15px !important;
+}
+
+.setting-piece .setting-title {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  display: block !important;
+  margin-bottom: 8px !important;
+  color: #555 !important;
+}
+
+.setting-description {
+  font-size: 12px !important;
+  color: #888 !important;
+  margin-bottom: 10px !important;
+}
+
+.language-switcher {
+  position: relative !important;
+  display: inline-block !important;
+  background: linear-gradient(135deg, #000000, #6e5e5e) !important;
+  border-radius: 30px !important;
+  padding: 5px 15px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  width: 150px !important;
+}
+
+.language-switcher .selected {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.language-switcher .selected > span {
+  flex-grow: 1 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.language-switcher .selected::after {
+  content: '\25BC' !important;
+  font-size: 12px !important;
+  margin-left: 10px !important;
+  color: white !important;
+  transition: transform 0.3s !important;
+}
+
+.language-switcher.open .selected::after {
+  transform: rotate(180deg) !important;
+}
+
+.language-switcher .switcher-ul {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 100% !important;
+  background: white !important;
+  color: black !important;
+  border-radius: 6px !important;
+  clip-path: inset(0 round 6px) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  margin: 5px 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: none !important;
+  z-index: 100 !important;
+  max-height: 150px !important;
+  overflow-y: auto !important;
+  border: 1px solid #ccc !important;
+}
+
+.language-switcher.open-ul .switcher-ul {
+  display: block !important;
+}
+
+.language-switcher .switcher-ul .switcher-item-li {
+  font-size: 14px !important;
+  padding: 10px !important;
+  cursor: pointer !important;
+  transition: background 0.3s !important;
+}
+
+.language-switcher .switcher-ul .switcher-item-li:hover {
+  background: #f0f0f0 !important;
+}
+
+#maximum-records {
+  width: 100% !important;
+  padding: 8px !important;
+  font-size: 14px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  box-sizing: border-box !important;
+}
+
+.setting-clear-cache {
+  width: 100% !important;
+  padding: 10px !important;
+  font-size: 14px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  background: #007bff !important;
+  color: white !important;
+  cursor: pointer !important;
+  transition: background 0.3s !important;
+}
+
+.setting-clear-cache:hover {
+  background: #0056b3 !important;
+}

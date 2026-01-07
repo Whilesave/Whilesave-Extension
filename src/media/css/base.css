@@ -1,0 +1,19 @@
+/**
+ * Color-related: --primary-color, --secondary-color, --background-color
+ * Font-related: --font-size-base, --font-family-sans
+ * Spacing-related: --spacing-small, --spacing-large
+ * Due to the use of shadow DOM technology, this base.css only contains variables related to :root.
+ */
+:root {
+  /* Popup*/
+  --color-modeal-header-background:#FFF;
+  --color-modeal-content-background:#f9f9f9;
+  --color-modeal-header-icon:#bfbfbf;
+  --color-modeal-header-icon-hover:#6a7a9b;
+
+  --size-padding-horizontal-modeal-header:10px;
+  --size-height-modeal-icon:50px;
+  --size-height-modeal-operat-icon:30px;
+  --size-height-modeal-header:55px;
+  --size-font-modeal-header-title:18px;
+}
