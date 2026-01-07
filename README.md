@@ -12,7 +12,7 @@ Shop at your favorite online stores, and we’ll notify you whenever cashback is
 ### Why Choose Whilesave?
 
 -   **Automatic Savings** – Instantly finds and applies the best available coupon codes at checkout.
--   **Browsing History Insights** – Track product history easily to make smarter purchasing decisions.
+-   **Browsing History Insights** – Track Amazon product history easily to make smarter purchasing decisions.
 -   **Smart Coupon Reminders** – Get notified when products have available coupons, even while searching.
 -   **Exclusive Deals** – Access a curated list of high-value coupons across the entire site.
     
