@@ -1,4 +1,5 @@
 .idea/
+.project
 __tmp/
 __dist/
 node_modules/
