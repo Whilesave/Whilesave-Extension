@@ -8,7 +8,7 @@
     global.modulePath = __dirname + "/node_modules/";
 	
 	const release = true;
-	const platform = "chrome";   //chrome firefox safari
+	const platform = "firefox";   //chrome firefox safari
     
     try {
         require("./funcs");

@@ -16,10 +16,25 @@
     "storage",
     "*://*/*"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+        "id": "joinwhilesave@firefox.whilesave.com",
+        "data_collection_permissions": {
+          "required": [
+            "browsingActivity",
+            "websiteContent",
+            "websiteActivity"
+          ],
+          "optional": [
+            "technicalAndInteraction"
+          ]
+         }
+      }
+  },
   "background": {
     "scripts": ["service_worker.js"],
     "persistent": false,
-	"type": "module"
+	  "type": "module"
   },
   "browser_action": {
     "default_icon": {
